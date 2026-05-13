@@ -19,12 +19,12 @@ Construction de l'injection : `'` (finir la string) + espace + `OR 1=1` (rend la
 
 `OR 1=1` vs `OR 1=2` :
 - `1=1` toujours vrai donc ramène tous les produits (toutes les catégories)
-- `1=2` toujours faux donc ne ramène que les lignes qui matchent la première condition (ex : "Tech gifts" si c'est le param de la requête)
+- `1=2` toujours faux donc ne ramène que les lignes qui matchent la première condition (ici `category = 'Gifts'`)
 
-Exemple :
-- Ligne 1 (Tech gifts) : première condition vraie : match
+Exemple avec la requête `WHERE category = 'Gifts' OR 1=2` :
+- Ligne 1 (Gifts) : première condition vraie : match
 - Ligne 2 (Books) : première fausse, `1=2` fausse aussi : skip
-- Ligne 3 (Tech gifts) : première vraie : match
+- Ligne 3 (Gifts) : première vraie : match
 - Ligne 4 (Toys) : première fausse, `1=2` fausse : skip
 
 ## Failles / Attaques
@@ -32,6 +32,7 @@ Exemple :
 - Bypass de filtre `WHERE` avec `OR 1=1 --`
 
 ## Détection / Défense
+> TODO : section à compléter, prioritaire pour SOC analyst. À reprendre après les prochains labs.
 
 ## Commandes / Payloads
 - `' OR 1=1 --`

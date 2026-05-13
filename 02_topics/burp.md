@@ -22,6 +22,7 @@ Automatisation de payloads sur des positions dans la requête. Mode sniper utili
 ## Failles / Attaques
 
 ## Détection / Défense
+> TODO : section à compléter, prioritaire pour SOC analyst. À reprendre après les prochains labs.
 
 ## Commandes / Payloads
 - CTRL+U dans Repeater : URL encode la sélection
