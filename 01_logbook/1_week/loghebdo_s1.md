@@ -1,10 +1,11 @@
 # Loghebdo S1 — du 05/05 au 12/05
 
 ## Stats
-- Heures cyber : 13h / 18h
-- Jours actifs : 7 / 6
+- Heures cyber : 13h sur 7 jours
+- Jours actifs : 7 / 7
 - Labs faits : 4
-- Moyenne Anki : 11,3 / 20 (sur 6 jours : 3, 7, 11, 20, 13, 14)
+- To-dos faits : 100%
+- Moyenne Anki : 11,3 / 20 (6 jours Anki / 7 actifs : 3, 7, 11, 20, 13, 14)
 
 ## Topics couverts
 - HTTP (request/response, méthodes, status codes)
