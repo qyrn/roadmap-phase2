@@ -35,6 +35,12 @@ Mnémo : 401 c'est avant l'auth, 403 c'est après l'auth.
 - HSTS preload list : liste d'endroits connus comme sécurisés avant même la première visite, pour éviter les problèmes dès le départ
 - SSL strip : un faux interprète se met entre le client et le serveur. Avec le serveur il parle en HTTPS, avec la victime il parle en HTTP pour intercepter et modifier la conversation
 
+### Security headers
+- `X-Frame-Options` : empêche que ton site soit chargé dans une iframe sur un autre site. Absence = clickjacking possible.
+- `Content-Security-Policy` (CSP) : restreint d'où peuvent venir les scripts, styles, images. Absence = XSS beaucoup plus facile à exploiter.
+- `Strict-Transport-Security` (HSTS) : force le navigateur à utiliser HTTPS. Absence = downgrade attack possible.
+- `X-Content-Type-Options: nosniff` : empêche le navigateur de "deviner" le type de fichier. Absence = MIME sniffing attacks.
+
 ## Commandes / Payloads
 
 Exemple GET :
