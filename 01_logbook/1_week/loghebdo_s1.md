@@ -4,7 +4,7 @@
 - Heures cyber : 13h / 18h
 - Jours actifs : 7 / 6
 - Labs faits : 4
-- Anki cartes actives : 20
+- Moyenne Anki : 11,3 / 20 (sur 6 jours : 3, 7, 11, 20, 13, 14)
 
 ## Topics couverts
 - HTTP (request/response, méthodes, status codes)
